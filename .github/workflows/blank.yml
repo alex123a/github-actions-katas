@@ -2,7 +2,7 @@ name: hello-world
 on: push
 env:
   docker_username: ${{ github.actor }}
-  docker_password: ${{ secrets.GITHUB_TOKEN }}
+  docker_password: ${{ secrets.DOCKER_PASSWORD }}
   GIT_COMMIT: ${{ github.sha }}
 jobs:
   Build:
